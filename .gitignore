@@ -1,0 +1,3 @@
+dask-worker-space/global.lock
+dask-worker-space/purge.lock
+*.dirlock

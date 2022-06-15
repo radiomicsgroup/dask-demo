@@ -17,5 +17,6 @@ dask-scheduler
 ## Run worker
 
 ```bash
-dask-worker SHEDULERIP:8786
+SHEDULERIP=$(ip route get 8.8.8.8 | head -1 | cut -d' ' -f7)
+dask-worker $SHEDULERIP:8786
 ```
